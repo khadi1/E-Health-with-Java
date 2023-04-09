@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.Button?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="427.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo3.Login_controller">
+<children>
+    <Pane layoutX="32.0" layoutY="5.0" prefHeight="423.0" prefWidth="366.0" style="-fx-border-radius: 40px; -fx-border-width: 1px; -fx-border-color: #F38700;">
+        <children>
+            <Label layoutX="133.0" layoutY="47.0" prefHeight="40.0" prefWidth="100.0" text="LOGIN" textFill="#797979">
+                <font>
+                    <Font name="Monospaced Regular" size="30.0" />
+                </font>
+            </Label>
+            <TextField fx:id="log_id" layoutX="62.0" layoutY="162.0" prefHeight="31.0" prefWidth="230.0" promptText="ID" style="-fx-border-color: 0px;" />
+            <Button fx:id="login_button" layoutX="117.0" layoutY="281.0" minWidth="116.0" mnemonicParsing="false" onAction="#login_action" prefHeight="21.0" prefWidth="116.0" style="-fx-background-color: #6ECEDC; -fx-border-radius: 40px;" text="LOGIN">
+                <font>
+                    <Font name="Wingdings 3" size="11.0" />
+                </font>
+            </Button>
+            <PasswordField fx:id="log_password" layoutX="62.0" layoutY="207.0" prefHeight="31.0" prefWidth="230.0" promptText="mot de passe" />
+            <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="18.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../images/carte-didentite.png" />
+                </image>
+                <effect>
+                    <ColorAdjust contrast="0.62" />
+                </effect>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="40.0" layoutX="20.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../images/password.png" />
+                </image>
+                <effect>
+                    <ColorAdjust contrast="0.62" />
+                </effect>
+            </ImageView>
+        </children>
+        <effect>
+            <BoxBlur height="2.0" width="1.0" />
+        </effect>
+    </Pane>
+</children>
+</AnchorPane>
+

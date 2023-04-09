@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.recherche_patient_controller">
+   <children>
+      <TableView fx:id="set_table" layoutX="55.0" layoutY="78.0" prefHeight="306.0" prefWidth="774.0" stylesheets="@../css/tableview.css">
+        <columns>
+          <TableColumn fx:id="id_table" prefWidth="55.99996566772461" text="ID" />
+          <TableColumn fx:id="nom_table" text="Nom" />
+            <TableColumn fx:id="prenom_table" prefWidth="82.39997863769531" text="Prenom" />
+            <TableColumn fx:id="num_cin_table" minWidth="0.0" prefWidth="84.0" text="Num_CIN" />
+            <TableColumn fx:id="sexe_table" minWidth="0.0" prefWidth="75.20001220703125" text="Sexe" />
+            <TableColumn fx:id="date_naissance_table" minWidth="0.0" prefWidth="102.39999389648438" text="Date_naissance" />
+            <TableColumn fx:id="tel_table" minWidth="0.0" prefWidth="81.60009765625" text="Tel" />
+            <TableColumn fx:id="description_table" minWidth="0.0" prefWidth="210.39996337890625" text="Description" />
+        </columns>
+      </TableView>
+      <Label layoutX="269.0" layoutY="20.0" text="Table des patients" textFill="#4b4949">
+         <font>
+            <Font name="Monospaced Regular" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="ajouter_patient" layoutX="382.0" layoutY="418.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="38.0" prefWidth="148.0" style="-fx-background-color: none; -fx-border-radius: 15px; -fx-border-color: #D57F19;" text="Ajouter_Patient" />
+      <Button fx:id="retour" layoutX="22.0" layoutY="21.0" mnemonicParsing="false" onAction="#retour" style="-fx-border-color: gray; -fx-background-color: none; -fx-border-radius: 5px;" text="Retour" />
+      <Button fx:id="supprime" layoutX="615.0" layoutY="418.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="38.0" prefWidth="111.0" style="-fx-background-color: none; -fx-border-radius: 15px; -fx-border-color: #B22D30;" text="Suppression" />
+   </children>
+</AnchorPane>
